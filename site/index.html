@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUDES NEST | Trang chủ</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css" integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/14236a625e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- HEADER -->
+        <header id="header">
+         <div class="top__header">
+            <div class="grid">
+                <div class="top__header-content">
+                    <div class="top__header-left">
+                        <i class="top__header-left-icon fa-regular fa-bell"></i>
+                        <span class="top__header-left-title">khuyến mãi 30/4 - 1/5, ĐỪNG VỘI BỎ QUA</span>
+                    </div>
+                    <div class="top__header-right">
+                        <i class="top__header-right-icon fa-regular fa-comments"></i>
+                        <div class="top__header-right-content">
+                            <p class="top__header-right-title">Tư vấn mua hàng</p>
+                            <h2 class="top__header-right-phone">1900 6750</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <div class="center__header">
+            <div class="grid">
+                <div class="center__header-content">
+                    <div class="center__header-logo">
+                        <img src="./image/logo.jpg" alt="" class="center__header-img">
+                    </div>
+                    <div class="center__header-search">
+                        <input type="text" name="search" id="search" placeholder="Tìm sản phẩm..." autocomplete="off" class="center__header-search-input">
+                        <i class="center__header-search-icon fa-solid fa-magnifying-glass"></i>
+                        <div class="search__product-history">
+                            <h1 class="search__product-history-heading">Đề xuất cho bạn</h1>
+                            <ul class="search__product-history-list">
+                                <li class="search__product-history-item">
+                                    <a href="" class="search__product-history-link">Quần đùi nữ</a>
+                                </li>
+                                <li class="search__product-history-item">
+                                    <a href="" class="search__product-history-link">Áo anime</a>
+                                </li>
+                                <li class="search__product-history-item">
+                                    <a href="" class="search__product-history-link">Túi khí</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="center__header-infor">
+                         <!-- Trường hợp chưa login -->
+                        <div class="center__header-infor-user-nologin">
+                            <i class="center__header-infor-user-icon fa-regular fa-user"></i>
+                            <i class="center__header-infor-user-icon-down fa-solid fa-chevron-down"></i>
+                            <div class="center__header-infor-title">Tài khoản</div>
+                            <div class="center__header-login-register">
+                                <nav class="center__header-lgin-register-nav">
+                                    <ul>
+                                        <li><a href="#"> <i class="fa-solid fa-arrow-right-to-bracket"></i>Đăng nhập</a></li>
+                                        <li><a href="#"> <i class="fa-solid fa-user-plus"></i>Đăng ký</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                         <!-- Trường hợp đã login -->
+                        <div class="center__header-infor-user">
+                            <div class="center__header-infor-user-img">
+                                <img src="./image/avatar.jpg" alt="" class="center__header-infor-user-avatar">
+                            </div>
+                            <div class="center__header-infor-namne">Phúc Lê</div>
+                            <div class="center__header-login-register">
+                                <nav class="center__header-lgin-register-nav">
+                                    <ul>
+                                        <li><a href="#"> <i class="fa-solid fa-arrow-right-to-bracket"></i>Trang cá nhân</a></li>
+                                        <li><a href="#"> <i class="fa-solid fa-user-minus"></i>Đăng xuất</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <div class="center__header-infor-cart">
+                            <i class="center__header-infor-cart-icon fa-brands fa-opencart"></i>
+                            <div class="center__header-infor-title">Giỏ hàng</div>
+                            <div class="center__header-infor-quantity">0</div>
+                            <!-- TRƯỜNG HỢP GIỎ HÀNG TRỐNG -->
+                            <div class="center__head-no-cart">
+                                <img src="./image/no__cart.png" alt="" class="head__no-cart">
+                                <h3 class="head__no-cart-title">giỏ hàng của bạn đang trống</h3>
+                            </div>
+                            <!-- TRƯỜNG HỢP CÓ SẢN PHẨM -->
+                            <div class="center__head-has-cart">
+                                <h4 class="search__cart-heading">GIỎ HÀNG</h4>
+                                <div class="center_-head-nav">
+                                    <ul class="search__cart-list-item">
+                                        <li class="search__cart-item">
+                                            <div class="search__cart-item-img">
+                                                <img src="./image/sp1.jpg" alt="" class="search__cart-img">
+                                            </div>
+                                            <div class="search__cart-item-info">
+                                                <div class="search__cart-item-head">
+                                                    <h5 class="search__cart-item-name">Quần đùi tập thể thao, bơi lội cạp cao dây rút hông, co giãn 4 chiều GYM, YOGA, ZUMBA Havana FQ10</h5>
+                                                    <div class="search__cart-items-price-qnt">
+                                                        <span class="search__cart-item-price">120.000đ</span>
+                                                        <span class="search__cart-item-multiply">x</span>
+                                                        <span class="search__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="search__cart-item-body">
+                                                    <span class="search__cart-item-description">Phân loại: 1</span>
+                                                    <span class="search__cart-item-delete">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="search__cart-list-item">
+                                        <li class="search__cart-item">
+                                            <div class="search__cart-item-img">
+                                                <img src="./image/sp1.jpg" alt="" class="search__cart-img">
+                                            </div>
+                                            <div class="search__cart-item-info">
+                                                <div class="search__cart-item-head">
+                                                    <h5 class="search__cart-item-name">Quần đùi tập thể thao, bơi lội cạp cao dây rút hông, co giãn 4 chiều GYM, YOGA, ZUMBA Havana FQ10</h5>
+                                                    <div class="search__cart-items-price-qnt">
+                                                        <span class="search__cart-item-price">120.000đ</span>
+                                                        <span class="search__cart-item-multiply">x</span>
+                                                        <span class="search__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="search__cart-item-body">
+                                                    <span class="search__cart-item-description">Phân loại: 1</span>
+                                                    <span class="search__cart-item-delete">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="search__cart-list-item">
+                                        <li class="search__cart-item">
+                                            <div class="search__cart-item-img">
+                                                <img src="./image/sp1.jpg" alt="" class="search__cart-img">
+                                            </div>
+                                            <div class="search__cart-item-info">
+                                                <div class="search__cart-item-head">
+                                                    <h5 class="search__cart-item-name">Quần đùi tập thể thao, bơi lội cạp cao dây rút hông, co giãn 4 chiều GYM, YOGA, ZUMBA Havana FQ10</h5>
+                                                    <div class="search__cart-items-price-qnt">
+                                                        <span class="search__cart-item-price">120.000đ</span>
+                                                        <span class="search__cart-item-multiply">x</span>
+                                                        <span class="search__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="search__cart-item-body">
+                                                    <span class="search__cart-item-description">Phân loại: 1</span>
+                                                    <span class="search__cart-item-delete">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="search__cart-list-item">
+                                        <li class="search__cart-item">
+                                            <div class="search__cart-item-img">
+                                                <img src="./image/sp1.jpg" alt="" class="search__cart-img">
+                                            </div>
+                                            <div class="search__cart-item-info">
+                                                <div class="search__cart-item-head">
+                                                    <h5 class="search__cart-item-name">Quần đùi tập thể thao, bơi lội cạp cao dây rút hông, co giãn 4 chiều GYM, YOGA, ZUMBA Havana FQ10</h5>
+                                                    <div class="search__cart-items-price-qnt">
+                                                        <span class="search__cart-item-price">120.000đ</span>
+                                                        <span class="search__cart-item-multiply">x</span>
+                                                        <span class="search__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="search__cart-item-body">
+                                                    <span class="search__cart-item-description">Phân loại: 1</span>
+                                                    <span class="search__cart-item-delete">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="search__cart-list-item">
+                                        <li class="search__cart-item">
+                                            <div class="search__cart-item-img">
+                                                <img src="./image/sp1.jpg" alt="" class="search__cart-img">
+                                            </div>
+                                            <div class="search__cart-item-info">
+                                                <div class="search__cart-item-head">
+                                                    <h5 class="search__cart-item-name">Quần đùi tập thể thao, bơi lội cạp cao dây rút hông, co giãn 4 chiều GYM, YOGA, ZUMBA Havana FQ10</h5>
+                                                    <div class="search__cart-items-price-qnt">
+                                                        <span class="search__cart-item-price">120.000đ</span>
+                                                        <span class="search__cart-item-multiply">x</span>
+                                                        <span class="search__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="search__cart-item-body">
+                                                    <span class="search__cart-item-description">Phân loại: 1</span>
+                                                    <span class="search__cart-item-delete">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="search__cart-list-item">
+                                        <li class="search__cart-item">
+                                            <div class="search__cart-item-img">
+                                                <img src="./image/sp1.jpg" alt="" class="search__cart-img">
+                                            </div>
+                                            <div class="search__cart-item-info">
+                                                <div class="search__cart-item-head">
+                                                    <h5 class="search__cart-item-name">Quần đùi tập thể thao, bơi lội cạp cao dây rút hông, co giãn 4 chiều GYM, YOGA, ZUMBA Havana FQ10</h5>
+                                                    <div class="search__cart-items-price-qnt">
+                                                        <span class="search__cart-item-price">120.000đ</span>
+                                                        <span class="search__cart-item-multiply">x</span>
+                                                        <span class="search__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="search__cart-item-body">
+                                                    <span class="search__cart-item-description">Phân loại: 1</span>
+                                                    <span class="search__cart-item-delete">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="search__cart-list-item">
+                                        <li class="search__cart-item">
+                                            <div class="search__cart-item-img">
+                                                <img src="./image/sp1.jpg" alt="" class="search__cart-img">
+                                            </div>
+                                            <div class="search__cart-item-info">
+                                                <div class="search__cart-item-head">
+                                                    <h5 class="search__cart-item-name">Quần đùi tập thể thao, bơi lội cạp cao dây rút hông, co giãn 4 chiều GYM, YOGA, ZUMBA Havana FQ10</h5>
+                                                    <div class="search__cart-items-price-qnt">
+                                                        <span class="search__cart-item-price">120.000đ</span>
+                                                        <span class="search__cart-item-multiply">x</span>
+                                                        <span class="search__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="search__cart-item-body">
+                                                    <span class="search__cart-item-description">Phân loại: 1</span>
+                                                    <span class="search__cart-item-delete">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="center__head-footer">
+                                    <a href="" class="btn btn__has-cart">Xem giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <div class="footer__header">
+            <div class="grid">
+                <div class="bottom__header-content">
+                    <div class="head__bottom-menuone">
+                        <ul class="header__bottom-list">
+                            <li class="header__bottom-items"><a href="" class="btn header__bottom-link-dm">
+                                <i class="header__bottom-link-iconqr fa-solid fa-qrcode"></i>DANH MỤC SẢN PHẨM 
+                                <i class="header__bottom-link-icondown fa-solid fa-chevron-down"></i></a>
+                                <div class="head__dm-sub">
+                                    <ul class="dm__sub-list">
+                                        <li class="dm__sub-items"><a href="" class="dm__sub-link">
+                                            <i class="fa-solid fa-dove"></i>Tổ yến
+                                            </a>
+                                            <i class="dm__sub-link-icon fa-solid fa-chevron-right"></i>
+                                                <div class="dm__sub-child">
+                                                    <ul class="dm__sub-child-list">
+                                                        <h3 class="dm__sub-child-list-title"><i class="dm__sub-child-list-icon fa-solid fa-link"></i>Tổ yến thô</h3>
+                                                        <li class="dm__sub-child-items">
+                                                            <a href="" class="dm__sub-child-link">Tổ yến thô loại 1</a></li>
+                                                        <li class="dm__sub-child-items">
+                                                            <a href="" class="dm__sub-child-link">Tổ yến thô loại 2</a></li>
+                                                        <li class="dm__sub-child-items">
+                                                            <a href="" class="dm__sub-child-link">Tổ yến thô loại 3</a></li>
+                                                    </ul>
+                                                    <ul class="dm__sub-child-list">
+                                                        <h3 class="dm__sub-child-list-title"><i class="dm__sub-child-list-icon fa-solid fa-link"></i>Tổ yến thô</h3>
+                                                        <li class="dm__sub-child-items">
+                                                            <a href="" class="dm__sub-child-link">Tổ yến thô loại 1</a></li>
+                                                        <li class="dm__sub-child-items">
+                                                            <a href="" class="dm__sub-child-link">Tổ yến thô loại 2</a></li>
+                                                        <li class="dm__sub-child-items">
+                                                            <a href="" class="dm__sub-child-link">Tổ yến thô loại 3</a></li>
+                                                    </ul>
+                                                    <ul class="dm__sub-child-list">
+                                                        <h3 class="dm__sub-child-list-title"><i class="dm__sub-child-list-icon fa-solid fa-link"></i>Tổ yến thô</h3>
+                                                        <li class="dm__sub-child-items">
+                                                            <a href="" class="dm__sub-child-link">Tổ yến thô loại 1</a></li>
+                                                        <li class="dm__sub-child-items">
+                                                            <a href="" class="dm__sub-child-link">Tổ yến thô loại 2</a></li>
+                                                        <li class="dm__sub-child-items">
+                                                            <a href="" class="dm__sub-child-link">Tổ yến thô loại 3</a></li>
+                                                    </ul>
+                                                    <ul class="dm__sub-child-list">
+                                                        <h3 class="dm__sub-child-list-title"><i class="dm__sub-child-list-icon fa-solid fa-link"></i>Tổ yến thô</h3>
+                                                        <li class="dm__sub-child-items">
+                                                            <a href="" class="dm__sub-child-link">Tổ yến thô loại 1</a></li>
+                                                        <li class="dm__sub-child-items">
+                                                            <a href="" class="dm__sub-child-link">Tổ yến thô loại 2</a></li>
+                                                        <li class="dm__sub-child-items">
+                                                            <a href="" class="dm__sub-child-link">Tổ yến thô loại 3</a></li>
+                                                    </ul>
+                                                    <ul class="dm__sub-child-list">
+                                                        <h3 class="dm__sub-child-list-title"><i class="dm__sub-child-list-icon fa-solid fa-link"></i>Tổ yến thô</h3>
+                                                        <li class="dm__sub-child-items">
+                                                            <a href="" class="dm__sub-child-link">Tổ yến thô loại 1</a></li>
+                                                        <li class="dm__sub-child-items">
+                                                            <a href="" class="dm__sub-child-link">Tổ yến thô loại 2</a></li>
+                                                        <li class="dm__sub-child-items">
+                                                            <a href="" class="dm__sub-child-link">Tổ yến thô loại 3</a></li>
+                                                    </ul>
+                                                    <ul class="dm__sub-child-list">
+                                                        <h3 class="dm__sub-child-list-title"><i class="dm__sub-child-list-icon fa-solid fa-link"></i>Tổ yến thô</h3>
+                                                        <li class="dm__sub-child-items">
+                                                            <a href="" class="dm__sub-child-link">Tổ yến thô loại 1</a></li>
+                                                        <li class="dm__sub-child-items">
+                                                            <a href="" class="dm__sub-child-link">Tổ yến thô loại 2</a></li>
+                                                        <li class="dm__sub-child-items">
+                                                            <a href="" class="dm__sub-child-link">Tổ yến thô loại 3</a></li>
+                                                    </ul>
+                                                </div>
+                                        </li>
+                                        <li class="dm__sub-items"><a href="" class="dm__sub-link">
+                                            <i class="fa-solid fa-bottle-water"></i>Yến chưng tươi
+                                            </a>
+                                        </li>
+                                        <li class="dm__sub-items"><a href="" class="dm__sub-link">
+                                            <i class="fa-solid fa-prescription-bottle"></i>Yến nước
+                                            </a>
+                                        </li>
+                                        <li class="dm__sub-items"><a href="" class="dm__sub-link">
+                                            <i class="fa-solid fa-plate-wheat"></i>Đông trùng hạ thảo
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header__bottom-items"><a href="" class="header__bottom-link">Trang chủ</a></li>
+                            <li class="header__bottom-items"><a href="" class="header__bottom-link">Giới thiệu</a></li>
+                            <li class="header__bottom-items"><a href="" class="header__bottom-link">Sản phẩm
+                                <i class="header__bottom-link-icondown-list fa-solid fa-chevron-down"></i>
+                                </a>
+                                <div class="sub__menu-product">
+                                    <ul class="sub__product-list">
+                                        <li class="sub__product-items"><a href="" class="sub__product-link">Tổ yến
+                                            <i class="sub__product-icon fa-solid fa-chevron-right"></i></a>
+                                            <ul class="sub__child-list">
+                                                <li class="sub__child-items"><a href="" class="sub__child-link">Tổ yến thô</a></li>
+                                                <li class="sub__child-items"><a href="" class="sub__child-link">Tổ yến làm sạch</a></li>
+                                                <li class="sub__child-items"><a href="" class="sub__child-link">Tổ yến rút lông</a></li>
+                                                <li class="sub__child-items"><a href="" class="sub__child-link">Yến vụn</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub__product-items"><a href="" class="sub__product-link">Yến chưng tươi
+                                            <i class="sub__product-icon fa-solid fa-chevron-right"></i></a>
+                                            <ul class="sub__child-list">
+                                                <li class="sub__child-items"><a href="" class="sub__child-link">Yên chưng dinh dưỡng</a></li>
+                                                <li class="sub__child-items"><a href="" class="sub__child-link">Yên chưng cho bé</a></li>
+                                                <li class="sub__child-items"><a href="" class="sub__child-link">Yến chưng hạt sen</a></li>
+                                                <li class="sub__child-items"><a href="" class="sub__child-link">Yến hũ chưng ít đường</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub__product-items"><a href="" class="sub__product-link">Yến nước
+                                            <i class="sub__product-icon fa-solid fa-chevron-right"></i></a>
+                                            <ul class="sub__child-list">
+                                                <li class="sub__child-items"><a href="" class="sub__child-link">Yến nước chưng đường phèn</a></li>
+                                                <li class="sub__child-items"><a href="" class="sub__child-link">Yến nước kỳ tự</a></li>
+                                                <li class="sub__child-items"><a href="" class="sub__child-link">Yến nước ăn kiên</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub__product-items"><a href="" class="sub__product-link">Soup
+                                            <i class="sub__product-icon fa-solid fa-chevron-right"></i></a>
+                                            <ul class="sub__child-list">
+                                                <li class="sub__child-items"><a href="" class="sub__child-link">Soup vi cá - bào ngư - tổ yến</a></li>
+                                                <li class="sub__child-items"><a href="" class="sub__child-link">Soup vi cá - bào ngư</a></li>
+                                                <li class="sub__child-items"><a href="" class="sub__child-link">Bát trân ngư xí ngự thiện</a></li>
+                                                <li class="sub__child-items"><a href="" class="sub__child-link">Bát trân uy uy ngự thiện</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub__product-items"><a href="" class="sub__product-link">Qùa biếu cao cấp</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header__bottom-items"><a href="" class="header__bottom-link">Tin tức
+                                <i class="header__bottom-link-icondown-list fa-solid fa-chevron-down"></i>
+                                </a>
+                                <div class="sub__menu-product">
+                                    <ul class="sub__product-list">
+                                        <li class="sub__product-items"><a href="" class="sub__product-link">Kiến thức</a></li>
+                                        <li class="sub__product-items"><a href="" class="sub__product-link">Kinh nghiệm</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header__bottom-items"><a href="" class="header__bottom-link">Chính sách
+                                <i class="header__bottom-link-icondown-list fa-solid fa-chevron-down"></i>
+                                </a>
+                                <div class="sub__menu-product">
+                                    <ul class="sub__product-list">
+                                        <li class="sub__product-items"><a href="" class="sub__product-link">Chính sách mua hàng</a></li>
+                                        <li class="sub__product-items"><a href="" class="sub__product-link">Chính sách thanh toán</a></li>
+                                        <li class="sub__product-items"><a href="" class="sub__product-link">Chính sách vận chuyển</a></li>
+                                        <li class="sub__product-items"><a href="" class="sub__product-link">Chính sách bảo mật</a></li>
+                                        <li class="sub__product-items"><a href="" class="sub__product-link">Cam kết cửa hàng</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header__bottom-items"><a href="" class="header__bottom-link">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         </div>
+        </header>
+        <!-- SLIDE SHOW -->
+         <div class="slide__show">
+            <div class="list__img">
+                <img src="./image/slideShow/slider_1.webp" alt="" class="list__items-img">
+                <img src="./image/slideShow/slider_2.webp" alt="" class="list__items-img">
+                <img src="./image/slideShow/slider_3.webp" alt="" class="list__items-img">
+            </div>
+            <div class="btn__slide">
+                <div class="btn__slide-icon list__items-icon-back"><i class="fa-solid fa-chevron-left"></i></div>
+                <div class="btn__slide-icon list__items-icon-next"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div class="index__img">
+                <div class="imdex__items imdex__items-0 active"></div>
+                <div class="imdex__items imdex__items-1"></div>
+                <div class="imdex__items imdex__items-2"></div>
+            </div>
+         </div>
+        <!-- CONTENT -->
+        <div id="container">
+            <div class="conten__category">
+                <div class="grid">
+                    <div class="category__title">
+                        <h3 class="category__title-1">Yến sào Sudes Nest</h3>
+                        <h1 class="category__title-2">danh mục sản phẩm</h1>
+                        <p class="category__title-3-1">danh mục sản phẩm Sudes Nest là giải pháp quà Tết, quà Trung Thu, quà tặng doanh nghiệp,.. được</p>
+                        <p class="category__title-3-2">lựa chọn để kết nối các mối quan hệ xã hội, kết nối tình thân, vun đắp các mối quan hệ thêm</p>
+                        <p class="category__title-3-3">bền chặt gắn kết.</p>
+                        <div class="tiltle__separator">
+                            <div class="separator__center"></div>
+                        </div>
+                    </div>
+                    <div class="category__product">
+                        <div class="grid__row cate__product">
+                            <!-- <div class="grid__colum-4">
+                                <a href="" class="cate_product">
+                                    <div class="product__img">
+                                        <img src="https://bizweb.dktcdn.net/100/506/650/themes/944598/assets/img_4banner_1.jpg?1717814629369" 
+                                        alt="" class="product__img-avatar" width="100%">
+                                        <div class="cate__box-info">
+                                            <h1 class="cate__box-name">Tổ yến</h1>
+                                            <h3 class="cate__box-price">giá chỉ từ 449k</h3>
+                                            <a href="" class="cate__box-btn">Xem ngay<i class="fa-solid fa-angles-right"></i></a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="conten__sale">
+                <div class="grid">
+                    <div class="category__title">
+                        <h3 class="category__title-1">Yến sào Sudes Nest</h3>
+                        <h1 class="category__title-2">Khuyến mãi đặc biệt</h1>
+                        <div class="tiltle__separator">
+                            <div class="separator__center"></div>
+                        </div>
+                    </div>
+                    <div class="product__sale">
+                        <div class="grid__row product__sale--js">
+                        </div>
+                        <div style="display: flex;" class="box-btn"><a href="" class="btn btn__product-sale">Xem tất cả</a></div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="conten__history">
+                <div class="grid">
+                    <div class="history__center-conten">
+                        <div class="history__text">
+                            <div class="category__title category__title-history">
+                                <h3 class="category__title-1 category__title-1-history">Yến sào Sudes Nest</h3>
+                                <h1 class="category__title-2 category__title-2-history">Câu chuyện về Sudes Nest</h1>
+                                <div class="tiltle__separator tiltle__separator-history">
+                                    <div class="separator__center separator__center-history"></div>
+                                </div>
+                            </div>
+                            <div class="history__text-conten">
+                                <p class="category__title-3-1 category__title-3-1-history">Như quý vị đã biết: "Tài sản lớn nhất của đời người là sức khỏe và trí tuệ", có sức khỏe và trí tuệ thì sẽ có tất cả. Sản phẩm yến sào là thực phẩm bổ dưỡng mang lại cho Quý vị sức khỏe, trí tuệ và sự trẻ trung. Yến sào được thị trường đón nhận với phương châm: "Chất lượng uy tín là thương hiệu".</p>
+                                <p class="category__title-3-2 category__title-3-2-history">Sản phẩm yến sào của Yến sào Sudes Nest được khai thác và yến nuôi tổ với chất lượng tuyệt đối...</p>
+                            </div>
+                            <a href="" class="btn history__btn">Xem chi tiết</a>
+                        </div>
+                        <div class="history__img">
+                            <img src="./image/section_about_product_1.webp" alt="" class="history__img-shop">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="conten__product">
+                <div class="grid">
+                    <div class="category__title">
+                        <h3 class="category__title-1">Yến sào Sudes Nest</h3>
+                        <h1 class="category__title-2">Tổ yến</h1>
+                        <div class="tiltle__separator">
+                            <div class="separator__center"></div>
+                        </div>
+                    </div>
+                    <ul class="list__cate">
+                        <li class="list__items"><a href="" class="btn btn--active">Tổ yến thô</a></li>
+                        <li class="list__items"><a href="" class="btn">Tổ yến làm sạch</a></li>
+                        <li class="list__items"><a href="" class="btn">tổ yến tinh chế</a></li>
+                        <li class="list__items"><a href="" class="btn">tổ yến cao cấp</a></li>
+                    </ul>
+                    <div class="product__cate-one">
+                        <div class="grid__row toyen__product--js">
+                           
+                        </div>
+                        <div style="display: flex;" class="box-btn"><a href="" class="btn btn__product-sale">Xem tất cả</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="conten__product">
+                <div class="grid">
+                    <div class="category__title">
+                        <h3 class="category__title-1">Yến sào Sudes Nest</h3>
+                        <h1 class="category__title-2">Sâm Hàn Quốc</h1>
+                        <div class="tiltle__separator">
+                            <div class="separator__center"></div>
+                        </div>
+                    </div>
+                    <ul class="list__cate">
+                        <li class="list__items"><a href="" class="btn btn--active">Hồng xâm</a></li>
+                        <li class="list__items"><a href="" class="btn">thiên xâm</a></li>
+                        <li class="list__items"><a href="" class="btn">hắc xâm</a></li>
+                        <li class="list__items"><a href="" class="btn">xâm tươi</a></li>
+                    </ul>
+                    <div class="product__cate-one">
+                        <div class="grid__row product__sam--js">
+                                       
+                        </div>
+                        <div style="display: flex;" class="box-btn"><a href="" class="btn btn__product-sale">Xem tất cả</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="conten__brands">
+                <div class="grid">
+                    <div class="category__title">
+                        <h3 class="category__title-1">Yến sào Sudes Nest</h3>
+                        <h1 class="category__title-2">Đối tác của chúng tôi</h1>
+                        <div class="tiltle__separator">
+                            <div class="separator__center"></div>
+                        </div>
+                    </div>
+                    <ul class="list__cate">
+                        <li class="list__items"><a href="" class="list__link"><img src="./image/doitac/img_brand_2.webp" alt=""></a></li>
+                        <li class="list__items"><a href="" class="list__link"><img src="./image/doitac/img_brand_3.webp" alt=""></a></li>
+                        <li class="list__items"><a href="" class="list__link"><img src="./image/doitac/img_brand_7.webp" alt=""></a></li>
+                        <li class="list__items"><a href="" class="list__link"><img src="./image/doitac/img_brand_4.webp" alt=""></a></li>
+                        <li class="list__items"><a href="" class="list__link"><img src="./image/doitac/img_brand_5.webp" alt=""></a></li>
+                        <li class="list__items"><a href="" class="list__link"><img src="./image/doitac/img_brand_6.webp" alt=""></a></li>
+
+                    </ul>
+                </div>
+            </div>
+         </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__colum-10-3">
+                        <div class="title__footer">
+                            chăm sóc khách hàng
+                        </div>
+                        <nav class="navbar__footer">
+                            <ul class="navbar__footer-items">
+                                <li><a class="navbar__footer-link" href="">Trung tâm trợ giúp</a></li>
+                                <li><a class="navbar__footer-link" href="">Hướng dẫn mua hàng</a></li>
+                                <li><a class="navbar__footer-link" href="">hướng dẫn bán hàng</a></li>
+                                <li><a class="navbar__footer-link" href="">Thanh toán</a></li>
+                                <li><a class="navbar__footer-link" href="">Vận chuyển</a></li>
+                                <li><a class="navbar__footer-link" href="">Trả hàng & hoàng tiền</a></li>
+                                <li><a class="navbar__footer-link" href="">Chính sách bảo hành</a></li>
+                                <li><a class="navbar__footer-link" href="">CHăm sóc khách hàng</a></li>                            
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__colum-10-3">
+                        <div class="title__footer">
+                            về Sudes Nest
+                        </div>
+                        <nav class="navbar__footer">
+                            <ul class="navbar__footer-items">
+                                <li><a class="navbar__footer-link" href="">giới thiệu về Sudes Nest việt nam</a></li>
+                                <li><a class="navbar__footer-link" href="">tuyển dụng</a></li>
+                                <li><a class="navbar__footer-link" href="">điều khoảng về Sudes Nest</a></li>
+                                <li><a class="navbar__footer-link" href="">chính sách bảo mật</a></li>
+                                <li><a class="navbar__footer-link" href="">chính sách mua hàng</a></li>
+                                <li><a class="navbar__footer-link" href="">liên hệ với trung tâm truyền thông</a></li>                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__colum-10-3">
+                        <div class="title__footer">
+                            Theo dõi chúng tôi trên
+                        </div>
+                        <nav class="navbar__footer">
+                            <ul class="navbar__footer-items">
+                                <li><a class="navbar__footer-link" href=""><i class="icon__follow-footer fa-brands fa-facebook-f"></i>FaceBook</a></li>
+                                <li><a class="navbar__footer-link" href=""><i class="icon__follow-footer fa-brands fa-instagram"></i></i>Instagram</a></li>
+                                <li><a class="navbar__footer-link" href=""><i class="icon__follow-footer fa-brands fa-x-twitter"></i></i>Twitter</a></li>                          
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__colum-10-3">
+                       <div class="cart__buy">
+                            <div class="title__footer">
+                                thanh toán
+                            </div>
+                            <div class="navbar__footer">
+                                <img class="navbar__footer-img-buy" src="./image/category__buy/buy1.jpg" alt="">
+                                <img class="navbar__footer-img-buy" src="./image/category__buy/category2.jpg" alt="">
+                                <img class="navbar__footer-img-buy" src="./image/category__buy/category3.jpg" alt="">
+                                <img class="navbar__footer-img-buy" src="./image/category__buy/category4.jpg" alt="">
+                                <img class="navbar__footer-img-buy" src="./image/category__buy/category5.jpg" alt="">
+                                <img class="navbar__footer-img-buy" src="./image/category__buy/category6.jpg" alt="">
+                            </div>
+                       </div>
+                       <div class="cart__buy2">
+                        <div class="title__footer">
+                            đơn vị vận chuyển
+                        </div>
+                        <div class="navbar__footer">
+                            <img class="navbar__footer-img-buy" src="./image/category__buy/transport1.jpg" alt="">
+                            <img class="navbar__footer-img-buy" src="./image/category__buy/transport2.jpg" alt="">
+                            <img class="navbar__footer-img-buy" src="./image/category__buy/transport3.jpg" alt="">
+                            <img class="navbar__footer-img-buy" src="./image/category__buy/transport4.jpg" alt="">
+                            <img class="navbar__footer-img-buy" src="./image/category__buy/transport5.jpg" alt="">
+                            <img class="navbar__footer-img-buy" src="./image/category__buy/transport6.jpg" alt="">
+                            <img class="navbar__footer-img-buy" src="./image/category__buy/transport7.jpg" alt="">
+                        </div>
+                   </div>
+                    </div>
+                </div>
+                <h1 class="dash__footer"></h1>
+                <div class="footer__2">
+                    <div class="footer__2-title">© 2024 Sudes Nest. Tất cả các quyền được bảo lưu.</div>
+                    <nav class="footer__2-navbar">
+                        <span class="footer__2-navbar-title">quốc gia & khu vực:</span>
+                        <ul class="footer__2-navbar-list">
+                            <li><a href="#" class="footer__2-navbar-list-item footer__2-navbar__list-item--separate">việt nam</a></li>
+                            <li class="navbar__list-item--showSub">
+                                <a href="#" class="footer__2-navbar-list-item footer__2-navbar__list-item--separate">thái lan</a>
+                            </li>
+                            <li class="navbar__list-item--showSub">
+                                <a href="#" class="footer__2-navbar-list-item footer__2-navbar__list-item--separate">singapore</a>
+                            </li>
+                            <li class="navbar__list-item--showSub">
+                                <a href="#" class="footer__2-navbar-list-item footer__2-navbar__list-item--separate">malaysia</a>
+                            </li>
+                            <li class="navbar__list-item--showSub">
+                                <a href="#" class="footer__2-navbar-list-item footer__2-navbar__list-item--separate">mianma</a>
+                            </li>
+                            <li class="navbar__list-item--showSub">
+                                <a href="#" class="footer__2-navbar-list-item footer__2-navbar__list-item--separate">colombia</a>
+                            </li><li class="navbar__list-item--showSub">
+                                <a href="#" class="footer__2-navbar-list-item">đài loan</a>
+                            </li>
+                </div>
+            </div>
+        </footer>
+        <div class="footer__end">
+            <div class="grid">
+                <nav class="footer__end-navbar">
+                    <ul class="footer__end-navbar-list">
+                        <li>
+                            <a href="#" class="footer__end-navbar-list-item footer__end-navbar__list-item--separate">chính sách bảo mật</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__end-navbar-list-item footer__end-navbar__list-item--separate">quy chế hoặt động</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__end-navbar-list-item footer__end-navbar__list-item--separate">chính sách trả hàng và hoàng tiền</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__end-navbar-list-item">chính sách vận chuyển</a>
+                        </li>
+                    </ul>    
+                </nav>
+                <div class="footer__end-title">
+                    <div class="footer__end-title-end">Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, Phường Ngọc Khánh, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.Sudes Nest.vn</div>
+                    <div class="footer__end-title-end">Chịu Trách Nhiệm Quản Lý Nội Dung: Lê Nguyễn Hoài Phúc</div>
+                    <div class="footer__end-title-end">Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015</div>
+                    <div class="footer__end-title-end">© 2015 - Bản quyền thuộc về Công ty TNHH Sudes Nest</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./slide-show.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

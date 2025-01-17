@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Quản lý sản phẩm</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../site/css/main.css">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <h2>Admin Phúc</h2>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="./index.html" class="active">Quản lý sản phẩm</a></li>
+                <li><a href="./categoryadmin.html">Quản lý danh mục</a></li>
+                <li><a href="#">Đơn hàng</a></li>
+                <li><a href="#">Khách hàng</a></li>
+                <li><a href="#">Cài đặt</a></li>
+                <li><a href="#">Đăng xuất</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <header>
+                <h1>Quản lý sản phẩm</h1>
+                <a class="btn btn__themsp">Thêm sản phẩm mới</a>
+            </header>
+
+            <!-- Product table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Ảnh sản phẩm</th>
+                        <th>Giá sale</th>
+                        <th>Giá gốc</th>
+                        <th>Loại</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>Cao Hắc Sâm Đông Trùng Hạ Thảo Achimmadang Hàn Quốc Hộp 2 Lọ x 500g (Mẫu 1)</td>
+                        <td><img src="../site/image/productSale/sp1.png" alt="" width="100px"></td>
+                        <td>350.000 VND</td>
+                        <td>350.000 VND</td>
+                        <td>Yến tươi</td>
+                        <td>
+                            <button style="margin-bottom: 10px;" class="btn">Sửa</button>
+                            <button class="btn">Xóa</button>
+                        </td>
+                    </tr> -->
+                    <!-- Thêm nhiều sản phẩm ở đây -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+            <div class="modal__body">
+            
+                <!--FORM  THÊM MỘT SẢN PHẨM-->
+
+                <div class="auth-form auth-form--register">
+                    <form class="product-form">
+                        <div class="form-group">
+                            <input type="text" id="product-name" name="product-name" placeholder="Nhập tên sản phẩm">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="product-price" name="product-price" placeholder="Nhập giá sản phẩm (Giá gốc)">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="product-sale" name="product-sale" placeholder="Nhập giá sản phẩm (Giá sale)">
+                        </div>
+                        <div class="form-group">
+                            <label for="product-category">Danh mục:</label>
+                            <select id="product-category" name="product-category">
+                                
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="product-address" name="product-address" placeholder="Nhập địa chỉ sản phẩm">
+                        </div>
+                        <div class="form-group">
+                            <label for="product-price">Sản phẩm hot:</label>
+                            <input type="checkbox" id="product-hotdeal" name="product-hotdeal">
+                        </div>
+                        <div class="form-group">
+                            <label for="product-description">Mô tả sản phẩm:</label>
+                            <textarea id="product-description" name="product-description" rows="3" placeholder="Nhập mô tả sản phẩm"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="product-image">Hình ảnh sản phẩm:</label>
+                            <input type="file" id="product-image" name="product-image">
+                        </div>
+                        <div class="form-group form-group--btn">
+                            <button class="btn" id="addPro">Thêm sản phẩm</button>
+                            <button class="btn" id="btn--close">Đóng</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+    <!-- MODAL UPDATE -->
+     <!-- The Modal -->
+     <div class="modalupdate" id="updateProductModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h4>Update Product</h4>
+            <form id="updateProductForm">
+                <div class="form-group">
+                    <input type="text" id="product-name" name="product-name" placeholder="Nhập tên sản phẩm">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="product-price" name="product-price" placeholder="Nhập giá sản phẩm (Giá gốc)">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="product-sale" name="product-sale" placeholder="Nhập giá sản phẩm (Giá sale)">
+                </div>
+                <div class="form-group">
+                    <label for="product-category">Danh mục:</label>
+                    <select id="product-category" name="product-category">
+                        
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="product-address" name="product-address" placeholder="Nhập địa chỉ sản phẩm">
+                </div>
+                <div class="form-group">
+                    <label for="product-price">Sản phẩm hot:</label>
+                    <input type="checkbox" id="product-hotdeal" name="product-hotdeal">
+                </div>
+                <div class="form-group">
+                    <label for="product-description">Mô tả sản phẩm:</label>
+                    <textarea id="product-description" name="product-description" rows="3" placeholder="Nhập mô tả sản phẩm"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="product-image">Hình ảnh sản phẩm:</label>
+                    <input type="file" id="product-image" name="product-image">
+                </div>
+            </form>
+            <div class="modal-footer">
+                <button class="btn-save" >Cập nhật</button>
+                <button class="btn-close">Đóng</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

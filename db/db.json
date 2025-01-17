@@ -1,0 +1,43 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "Tổ Yến",
+      "image": "toyen.png",
+      "description": "Sở hữu thiết kế sang trọng, màn hình siêu mỏng kích thước 58 inch, độ phân giải 4K sắc nét, công nghệ HDR10 tối ưu độ sáng, độ tương phản cho trải nghiệm xem phim tuyệt vời. Tích hợp hệ điều hành Google TV với giao diện trực quan, dễ sử dụng cùng kho ứng dụng giải trí đa dạng, phong phú. "
+    },
+    {
+      "id": "2",
+      "name": "Yến Tươi",
+      "image": "yentuoi.png",
+      "description": "Sở hữu thiết kế sang trọng, màn hình siêu mỏng kích thước 58 inch, độ phân giải 4K sắc nét, công nghệ HDR10 tối ưu độ sáng, độ tương phản cho trải nghiệm xem phim tuyệt vời. Tích hợp hệ điều hành Google TV với giao diện trực quan, dễ sử dụng cùng kho ứng dụng giải trí đa dạng, phong phú. "
+    },
+    {
+      "id": "3",
+      "name": "Đông Trùng Hạ Thảo",
+      "image": "dongtrùng.png",
+      "description": "Sở hữu thiết kế sang trọng, màn hình siêu mỏng kích thước 58 inch, độ phân giải 4K sắc nét, công nghệ HDR10 tối ưu độ sáng, độ tương phản cho trải nghiệm xem phim tuyệt vời. Tích hợp hệ điều hành Google TV với giao diện trực quan, dễ sử dụng cùng kho ứng dụng giải trí đa dạng, phong phú. "
+    },
+    {
+      "id": "4",
+      "name": "Soup Yến",
+      "image": "soupyen.png",
+      "description": "Sở hữu thiết kế sang trọng, màn hình siêu mỏng kích thước 58 inch, độ phân giải 4K sắc nét, công nghệ HDR10 tối ưu độ sáng, độ tương phản cho trải nghiệm xem phim tuyệt vời. Tích hợp hệ điều hành Google TV với giao diện trực quan, dễ sử dụng cùng kho ứng dụng giải trí đa dạng, phong phú. "
+    }
+  ],
+  "products": [
+    {
+      "id": "2",
+      "name": "Bánh trung thu nhân trà xanh",
+      "category": "Yến Tươi",
+      "price": "12000",
+      "sale": "10000",
+      "image": "sp3.png",
+      "hotdeal": 1,
+      "star": 5,
+      "bestseller": 50,
+      "address": "Bình Phước",
+      "description": "123"
+    }
+  ]
+}

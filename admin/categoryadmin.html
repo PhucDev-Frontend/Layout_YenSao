@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Quản lý danh mục</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../site/css/main.css">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <h2>Admin Phúc</h2>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="./index.html">Quản lý sản phẩm</a></li>
+                <li><a href="./categoryadmin.html" class="active">Quản lý danh mục</a></li>
+                <li><a href="#">Đơn hàng</a></li>
+                <li><a href="#">Khách hàng</a></li>
+                <li><a href="#">Cài đặt</a></li>
+                <li><a href="#">Đăng xuất</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <header>
+                <h1>Quản lý danh mục</h1>
+                <button class="btn btn__themsp">Thêm danh mục mới</button>
+            </header>
+
+            <!-- Category table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tên danh mục</th>
+                        <th>Ảnh danh muc</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>Yến tươi</td>
+                        <td><img src="../site/image/category/dongtrung.png" alt="" width="100px"></td>
+                        <td>
+                            <button class="btn">Sửa</button>
+                            <button class="btn">Xóa</button>
+                        </td>
+                    </tr> -->
+                    <!-- Thêm nhiều danh mục ở đây -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+            <div class="modal__body">
+            
+                <!--FORM  THÊM MỘT SẢN PHẨM-->
+
+                <div class="auth-form auth-form--register">
+                    <form get="" class="product-form">
+                        <div class="form-group">
+                            <label for="product-name">Tên Danh Mục:</label>
+                            <input type="text" id="product-cate" name="product-cate" placeholder="Nhập tên danh mục">
+                        </div>
+                        <div class="form-group form-group--btn">
+                            <button type="submit" class="btn">Thêm danh mục</button>
+                            <button type="submit" class="btn" id="btn--close">Đóng</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+    <script src="./themsp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="catePro.js"></script>
+</body>
+</html>

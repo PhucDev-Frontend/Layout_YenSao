@@ -1,0 +1,209 @@
+.detail{
+    background-color: #f1e8d7;
+    padding: 50px 0;
+}
+
+.detailproduct{
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.btn__detail{
+    background-color: #fdc97d;
+    opacity: 0.1;
+    border: 1px solid;
+    color: #fff;
+}
+
+.btn.detail__buy-btn{
+    margin-right: 20px;
+}
+
+.detail__buy-icon{
+    margin-right: 10px;
+}
+
+.detail__name{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #333;
+    line-height: 30px;
+}
+
+.detail__price{
+    margin: 20px 0;
+}
+
+.detail__price-original{
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #333;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.detail__price-sale{
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #f0a32f;
+}
+
+.detail__quantity{
+   font-size: 1.6rem;
+}
+
+.detail__quantity-value{
+    text-align: center;
+    width: 70px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-left: none;
+    border-right: none;
+}
+
+.detail__quantity-minus{
+    border: 1px solid #333;
+    color: #333;
+    padding: 0 5px;
+    cursor: pointer;
+}   
+.detail__quantity-plus{
+    border: 1px solid #333;
+    color: #333;
+    padding: 0 5px;
+    cursor: pointer;
+}   
+
+.detail__quantity-total{
+    font-size: 1.6rem;
+    color: #333;
+    margin: 20px 0;
+}
+.home-fillter__label{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #004e3e;
+    border-bottom: 1px solid #004e3e;
+}
+
+.grid__colum-12{
+    margin-top: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100%;
+}
+
+.fa-brands{
+    font-size: 1.4rem;
+    padding: 0 10px;
+}
+
+.description__title{
+    font-size: 2rem;
+    color: #fdc97d;
+    font-weight: 500;
+    border-bottom: 1px solid #fdc97d;
+}
+
+.detail__description{
+    font-size: 1.6rem;
+    word-spacing: 5px;
+    line-height: 23px;
+    color: #918d8d;
+    margin-top: 10px;
+    height: 160px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+}
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.grid__columdetail-8{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 66.6667%;
+}
+
+.pagination__num{
+    font-size: 2rem;
+    color: #333;
+    padding: 12px 15px;
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.pagination__num:hover{
+    color: #fdc97d;
+}
+
+.pagination__num--active{
+    background-color: #fdc97d;
+    color: #fff !important;
+}
+
+.grid__columdetail-4{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 33.3334%;
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+}
+
+.quantity{
+    font-size: 1.6rem;
+    color: #333;
+    margin-right: 10px;
+}
+
+.quantity-selector {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #f0f0f0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+input[type="number"] {
+    width: 60px;
+    height: 40px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
+
+input[type="number"]:focus {
+    outline: none;
+}
+
+.minus-btn {
+    border-right: 1px solid #ddd;
+}
+
+.plus-btn {
+    border-left: 1px solid #ddd;
+}
